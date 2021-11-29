@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="ans" class="que2.Question">
+    
+    <property name="questionId" value="1"></property>
+    <property name="question" value="what is your name"></property>
+    <property name="answers">
+    <list>
+    <value>My name is Anuj bhati</value>
+    <value>My name is Shivansh Garg</value>
+    <value>My name is Parth pangtey</value>
+    </list>
+    </property>
+    </bean>
+    </beans>

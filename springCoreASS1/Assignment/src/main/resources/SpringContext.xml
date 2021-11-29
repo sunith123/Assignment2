@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 
+    <bean id="custemer" class="framwork.assig.Custemer" >
+        <constructor-arg name="id" value="007"></constructor-arg>
+        <constructor-arg name="name" value="Mobin"></constructor-arg>
+        <constructor-arg name="contact" value="123456789"></constructor-arg>
+        <constructor-arg>
+            <ref bean="address" />
+        </constructor-arg>
+    </bean>
+ 
+    <bean id="address" class="framwork.assig.Address">
+        <constructor-arg name="street" value="Kochi"></constructor-arg>
+        <constructor-arg name="city" value="Kochi"></constructor-arg>
+        <constructor-arg name="state" value="Kerala"></constructor-arg>
+        <constructor-arg name="zipcode" value="01"></constructor-arg>
+        <constructor-arg name="country" value="India"></constructor-arg>
+    </bean>
+    </beans>
